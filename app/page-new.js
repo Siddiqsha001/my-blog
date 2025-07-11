@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { getAuthData, logout } from './lib/auth';
-import styles from './homepage-new.module.css';
+import styles from './homepage.module.css';
 
 export default function Home() {
   const [blogs, setBlogs] = useState([]);

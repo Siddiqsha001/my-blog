@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Welcome to My Blog",
+    "content": "This is the first blog post. Welcome to my amazing blog where I share my thoughts and experiences!",
+    "author": "Admin",
+    "createdAt": "2025-01-01T10:00:00Z",
+    "updatedAt": "2025-01-01T10:00:00Z",
+    "published": true,
+    "tags": [
+      "welcome",
+      "introduction"
+    ],
+    "excerpt": "Welcome to my amazing blog where I share my thoughts and experiences!"
+  },
+  {
+    "id": 2,
+    "title": "Getting Started with Next.js",
+    "content": "Next.js is a powerful React framework that makes building web applications a breeze. In this post, I'll walk you through the basics of getting started with Next.js and why it's become one of the most popular choices for React developers.",
+    "author": "Admin",
+    "createdAt": "2025-01-02T14:30:00Z",
+    "updatedAt": "2025-01-02T14:30:00Z",
+    "published": true,
+    "tags": [
+      "nextjs",
+      "react",
+      "tutorial"
+    ],
+    "excerpt": "Next.js is a powerful React framework that makes building web applications a breeze."
+  },
+  {
+    "title": "Sample",
+    "content": "It comes from within. ",
+    "author": "Admin",
+    "published": true,
+    "tags": [
+      "spiritual"
+    ],
+    "excerpt": "How to be positive?",
+    "id": 3,
+    "createdAt": "2025-07-11T06:12:46.428Z",
+    "updatedAt": "2025-07-11T06:12:46.428Z"
+  }
+]
