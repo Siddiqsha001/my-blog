@@ -90,7 +90,7 @@ export default function Login() {
                 className={`${styles.userTypeBtn} ${styles.adminBtn}`}
                 onClick={() => handleUserTypeSelect('admin')}
               >
-                <div className={styles.userTypeIcon}>🔧</div>
+                <div className={styles.userTypeIcon}></div>
                 <div className={styles.userTypeText}>
                   <h3>Admin</h3>
                   <p>Manage and create blog posts</p>
@@ -101,7 +101,7 @@ export default function Login() {
                 className={`${styles.userTypeBtn} ${styles.userBtn}`}
                 onClick={() => handleUserTypeSelect('user')}
               >
-                <div className={styles.userTypeIcon}>👤</div>
+                <div className={styles.userTypeIcon}></div>
                 <div className={styles.userTypeText}>
                   <h3>User</h3>
                   <p>Read and explore blog posts</p>

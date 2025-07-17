@@ -1,5 +1,7 @@
+
 'use client';
 import { useState } from 'react';
+import styles from './loginadmin.module.css';
 
 export default function UserLoginPage() {
   const [formData, setFormData] = useState({ name: '', email: '', password: '' });
@@ -15,17 +17,16 @@ export default function UserLoginPage() {
   };
 
   return (
-    <div style={{ padding: 20 }}>
-      <h2>User Login</h2>
-      <form onSubmit={handleSubmit}>
-        <input name="name" placeholder="Name" onChange={handleChange} required />
-        <br /><br />
-        <input name="email" placeholder="Email" type="email" onChange={handleChange} required />
-        <br /><br />
-        <input name="password" placeholder="Password" type="password" onChange={handleChange} required />
-        <br /><br />
-        <button type="submit">Submit</button>
-      </form>
+    <div className={styles.bg}>
+      <div className={styles.container}>
+        <h2 className={styles.title}>User Login</h2>
+        <form onSubmit={handleSubmit} className={styles.form}>
+          <input name="name" placeholder="Name" onChange={handleChange} required className={styles.input} />
+          <input name="email" placeholder="Email" type="email" onChange={handleChange} required className={styles.input} />
+          <input name="password" placeholder="Password" type="password" onChange={handleChange} required className={styles.input} />
+          <button type="submit" className={styles.button}>Submit</button>
+        </form>
+      </div>
     </div>
   );
 }
