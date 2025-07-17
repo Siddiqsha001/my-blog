@@ -72,7 +72,7 @@ export default function NotFound() {
           </Link>
           
           <button
-            onClick={() => window.history.back()}
+            type="button"
             style={{
               padding: '12px 24px',
               backgroundColor: '#6c757d',
@@ -84,8 +84,7 @@ export default function NotFound() {
               cursor: 'pointer',
               transition: 'background-color 0.2s'
             }}
-            onMouseOver={(e) => e.target.style.backgroundColor = '#5a6268'}
-            onMouseOut={(e) => e.target.style.backgroundColor = '#6c757d'}
+            onClick={() => window.history.back()}
           >
             Go Back
           </button>
