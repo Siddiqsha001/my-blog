@@ -26,6 +26,27 @@ export default function UserLoginPage() {
           <input name="password" placeholder="Password" type="password" onChange={handleChange} required className={styles.input} />
           <button type="submit" className={styles.button}>Submit</button>
         </form>
+        <div style={{
+          marginTop: '24px',
+          padding: '12px',
+          backgroundColor: '#e9ecef',
+          borderRadius: '6px',
+          textAlign: 'center',
+          color: '#212529',
+          fontSize: '16px',
+          fontWeight: '500'
+        }}>
+          <p style={{ margin: 0 }}>
+            <strong>Admin Login:</strong><br />
+            Username: <span style={{fontWeight:'bold'}}>admin</span><br />
+            Password: <span style={{fontWeight:'bold'}}>admin123</span>
+          </p>
+          <p style={{ margin: '12px 0 0 0' }}>
+            <strong>User Login:</strong><br />
+            Username: <span style={{fontWeight:'bold'}}>user</span><br />
+            Password: <span style={{fontWeight:'bold'}}>user123</span>
+          </p>
+        </div>
       </div>
     </div>
   );

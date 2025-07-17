@@ -127,7 +127,7 @@ export default function Login() {
                   value={credentials.username}
                   onChange={handleInputChange}
                   required
-                  placeholder="Enter your username"
+                  placeholder="Username"
                 />
               </div>
               
@@ -140,7 +140,7 @@ export default function Login() {
                   value={credentials.password}
                   onChange={handleInputChange}
                   required
-                  placeholder="Enter your password"
+                  placeholder="Password"
                 />
               </div>
               
@@ -156,7 +156,41 @@ export default function Login() {
             </form>
             
             <div className={styles.defaultCredentials}>
-             
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                minHeight: '180px',
+                marginTop: '32px',
+              }}>
+                <div style={{
+                  padding: '16px',
+                  background: 'linear-gradient(90deg, #667eea 0%, #764ba2 100%)',
+                  borderRadius: '10px',
+                  textAlign: 'center',
+                  color: '#fff',
+                  fontSize: '18px',
+                  fontWeight: '600',
+                  boxShadow: '0 4px 16px rgba(0,0,0,0.15)',
+                  border: '2px solid #a78bfa',
+                  maxWidth: '340px',
+                }}>
+                  {userType === 'admin' ? (
+                    <>
+                      <span style={{fontSize:'20px',fontWeight:'bold',display:'block',marginBottom:'8px'}}>Admin Login Credentials</span>
+                      Username: <span style={{fontWeight:'bold',background:'#23244a',color:'#a78bfa',padding:'2px 8px',borderRadius:'4px'}}>admin</span><br />
+                      Password: <span style={{fontWeight:'bold',background:'#23244a',color:'#a78bfa',padding:'2px 8px',borderRadius:'4px'}}>admin123</span>
+                    </>
+                  ) : (
+                    <>
+                      <span style={{fontSize:'20px',fontWeight:'bold',display:'block',marginBottom:'8px'}}>User Login Credentials</span>
+                      Username: <span style={{fontWeight:'bold',background:'#23244a',color:'#a78bfa',padding:'2px 8px',borderRadius:'4px'}}>user</span><br />
+                      Password: <span style={{fontWeight:'bold',background:'#23244a',color:'#a78bfa',padding:'2px 8px',borderRadius:'4px'}}>user123</span>
+                    </>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
         )}

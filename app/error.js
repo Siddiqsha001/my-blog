@@ -102,7 +102,8 @@ export default function Error({ error, reset }) {
           padding: '16px',
           backgroundColor: '#f8f9fa',
           borderRadius: '6px',
-          border: '1px solid #e9ecef'
+          border: '1px solid #e9ecef',
+          textAlign: 'center'
         }}>
           <p style={{
             fontSize: '14px',
@@ -110,6 +111,28 @@ export default function Error({ error, reset }) {
             margin: '0'
           }}>
             If this problem persists, please contact our support team with the error details.
+          </p>
+        </div>
+
+        <div style={{
+          marginTop: '24px',
+          padding: '12px',
+          backgroundColor: '#e9ecef',
+          borderRadius: '6px',
+          textAlign: 'center',
+          color: '#212529',
+          fontSize: '16px',
+          fontWeight: '500'
+        }}>
+          <p style={{ margin: 0 }}>
+            <strong>To login as Admin:</strong><br />
+            Username: <span style={{fontWeight:'bold'}}>admin</span><br />
+            Password: <span style={{fontWeight:'bold'}}>admin123</span>
+          </p>
+          <p style={{ margin: '12px 0 0 0' }}>
+            <strong>To login as User:</strong><br />
+            Username: <span style={{fontWeight:'bold'}}>user</span><br />
+            Password: <span style={{fontWeight:'bold'}}>user123</span>
           </p>
         </div>
       </div>
