@@ -49,7 +49,7 @@ export default function Error({ error, reset }) {
           color: '#6c757d',
           lineHeight: '1.6'
         }}>
-          We're sorry, but something unexpected happened. Don't worry, our team has been notified and we're working to fix this issue.
+          We&apos;re sorry, but something unexpected happened. Don&apos;t worry, our team has been notified and we&apos;re working to fix this issue.
         </p>
         
         <div style={{
